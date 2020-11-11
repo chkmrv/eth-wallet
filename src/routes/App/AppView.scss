@@ -1,0 +1,34 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #ececec;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.layout {
+    box-sizing: border-box;
+    width: 1180px;
+    transition: transform .3s;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-block {
+    background: #ffffff;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 28px;
+    border-radius: 4px;
+}
+
+@media (max-width: 1180px) {
+    .App .layout {
+        width: 100%;
+    }
+}
